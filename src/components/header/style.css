@@ -1,0 +1,104 @@
+.header {
+	background: #333333;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	display: block;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding: 0 140px;
+}
+
+.brandLogo {
+	
+}
+
+.header h1 {
+	float: left;
+	margin: 0;
+	padding: 0 15px;
+	font-size: 24px;
+	line-height: 56px;
+	font-weight: 400;
+	color: #FFF;
+	z-index: 9999;
+}
+
+.header nav {
+	float: right;
+	font-size: 100%;
+}
+
+.header nav a {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	margin-right: 10px;
+	min-width: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.header nav a:hover {
+	color: #333333;
+	background: #ffffff;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.navigation {
+		padding: 0 40px;
+	}
+
+	.header nav {
+		position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    background: #333333;
+		width: 100%;
+		padding-bottom: 1px;
+	}
+
+	.header nav a {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		height: 75px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		border-radius: 0;
+	}
+
+	.header nav a:hover {
+		border-radius: 0;
+	}
+
+	nav.show {
+		transform: translateX(0);
+		overflow: hidden;
+    opacity: 1;
+		transition: all 0.5s ease-in-out;
+	}
+	
+	nav.hide {
+		transform: translateX(-1000px);
+		opacity: 0;
+		transition: all 0.5s ease-out;
+	}
+}

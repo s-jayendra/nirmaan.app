@@ -1,0 +1,32 @@
+.hamburger {
+  /* display: none; */
+};
+
+.burger {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  margin-top: 4px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.left {
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+
+.right {
+  transform: rotate(135deg);
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
