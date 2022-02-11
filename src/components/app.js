@@ -17,6 +17,9 @@ const App = () => (
 			<Home />
 			<GoToTop />
 		</div>
+		<footer>
+		info@nirmaan.app | +91-9835377587
+		</footer>
 	</div>
 )
 

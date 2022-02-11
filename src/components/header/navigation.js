@@ -3,6 +3,7 @@ import { h } from "preact";
 import { useState } from "preact/hooks";
 
 import Hamburger from "../hamburger";
+import LoginButton from "./login";
 
 import style from "./style.css";
 
@@ -28,6 +29,7 @@ const Navigation = () => {
 				<a href="/#constructions">Constructions</a>
 				<a href="/#requirements">Requirements</a>
 				<a href="/#stop-chasing">Stop Chasing</a>
+				<LoginButton />
 			</nav>
     </>
   )

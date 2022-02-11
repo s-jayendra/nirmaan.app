@@ -1,0 +1,27 @@
+.respWrapper {
+ width: 250px;
+ height: 300px;
+ border-radius: 10px;
+ background: linear-gradient(to right bottom, #ffffff 50%, #EBEDFF);
+
+ position: relative;
+}
+
+.respTitle {
+  width: 100%;
+  background: #7c5b5b;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.respDesc {
+  padding: 30px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+}

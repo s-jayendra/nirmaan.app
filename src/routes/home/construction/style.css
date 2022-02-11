@@ -1,0 +1,30 @@
+.constWrapper {
+  width: 300px;
+  border: 20px double transparent;
+  height: 300px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: #ffffff;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.constWrapper:hover {
+  border: 20px double #031d5e;
+  transition: all 1s ease-in-out;
+}
+
+.constIndex {
+  font-size: 4em;
+  position: absolute;
+  left: -44px;
+  background: #ffffff;
+  color: #031d5e;
+}
+
+.constDesc {
+  font-size: 16px;
+  font-weight: bold;
+}

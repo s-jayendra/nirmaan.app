@@ -1,12 +1,27 @@
 .header {
-	background: #333333;
+	background: transparent;
 	position: fixed;
 	width: 100%;
 	top: 0px;
 	left: 0px;
 	z-index: 1000;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
 	display: block;
+}
+
+.headerBg {
+	position: fixed;
+	height: 80px;
+	top: 0;
+	background-color: transparent;
+	width: 0;
+	z-index: -1;
+	transition: all 0.5s ease-in;
+}
+
+.headerBg.appear {
+	background-color: #021e5e;
+	width: 100%;
 }
 
 .navigation {
@@ -50,12 +65,23 @@
 	font-size: 20px;
 	font-weight: bold;
 	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
 }
 
 .header nav a:hover {
 	color: #333333;
 	background: #ffffff;
 	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+}
+
+.header nav a.loginButton {
+	border: 1px solid #ffffff;
+	padding: 0 30px;
+	box-sizing: content-box;
+}
+.header nav a.loginButton:hover {
+	border-color: #021e5e;
 }
 
 @media screen and (max-width: 768px) {
