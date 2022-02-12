@@ -8,10 +8,10 @@
 }
 
 .line {
-  width: 40px;
+  width: 30px;
   height: 4px;
   margin-top: 4px;
-  background: #ffffff;
+  background: #303030;
   border-radius: 4px;
 }
 

@@ -16,21 +16,22 @@
   line-height: 54px;
   text-align: right;
   padding-right: 140px;
-  color:#021e5e;
+  color:#000000;
+  text-transform: uppercase;
 }
 
 .verticalLine {
-  height: 400px;
-  width: 30px;
+  height: 320px;
+  width: 10px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #021e5e;
+  background-color: #000000;
+  border-radius: 10px;
 }
 
 .chaseItems {
   flex: 1;
-
 }
 
 .chaseItem {
@@ -40,6 +41,8 @@
   padding-left: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .chaseItem::before {
@@ -48,7 +51,7 @@
   line-height: 40px;
   position: absolute;
   left: 30px;
-  color: #008000;
+  color: #FB0E0E;
 }
 
 @media screen  and (max-width: 768px) {
@@ -63,6 +66,7 @@
     height: 3px;
   }
   .chaseHeading {
+    font-size: 34px;
     padding: 0;
     letter-spacing: 2px;
     position: relative;
@@ -75,7 +79,5 @@
   }
   .chaseItem:before {
     left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }

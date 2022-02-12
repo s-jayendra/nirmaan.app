@@ -6,7 +6,8 @@ import style from './style.css';
 import Construction from './construction';
 import Responsibilities from './responsibilities';
 import StopChasing from './stopchasing';
-import LoginButton from "../../components/header/login";
+import FAQ from './faq';
+import { GetInTouch } from '../../components/ui';
 
 const Home = () => (
   <>
@@ -14,19 +15,13 @@ const Home = () => (
       <section className={style.homeSection}>
         <div class={style.loginWrapper}>
           <h1>
-            <mark>One-stop solution for all your construction requirements</mark>
+            Easy and reliable construction services
           </h1>
           <div class={style.loginButton}>
-            <LoginButton
-              className={style.primary}
-              text="Login"
-              href={"https://myproject.nirmaan.app/"}
-              target="_blank"
-            />
-            <div class={style.buttonSeparator}/>
-            <LoginButton className={style.secondary} text="Contact Us" />
+            <GetInTouch className="tertiary" linkText="Get In Touch" />
           </div>
         </div>
+        <hr />
       </section>
     </div>
     <div class={style.ourServices} id="our-services">
@@ -37,6 +32,24 @@ const Home = () => (
             services.map(item => ( <Service key={item.id} data={item} />))
           }
         </div>
+        <hr />
+      </section>
+    </div>
+    <div class={style.stopChasing} id="stop-chasing">
+      <section class={style.content}>
+        <StopChasing />
+        <hr />
+      </section>
+    </div>
+    <div class={style.requirements} id="requirements">
+      <section class={style.content}>
+        <h1>Nirmaan takes care of all your construction requirements</h1>
+        <div class={style.flexBox}>
+          {
+            responsibilities.map((item) => (<Responsibilities key={item.id} data={item} />))
+          }
+        </div>
+        <hr />
       </section>
     </div>
     <div class={style.constructions} id="constructions">
@@ -44,28 +57,26 @@ const Home = () => (
         <h1>Construction Has Never Been Easier</h1>
         <div class={style.flexBox}>
           {
-            constructions.map((item, index) => (<Construction key={item.id} data={item} index={index + 1} />))
+            constructions.map((item, index) => (
+              <Construction
+                key={item.id}
+                data={item}
+                index={index + 1}
+                len={constructions.length}
+              />
+            ))
           }
         </div>
+        <hr />
       </section>
     </div>
-    <div class={style.constructions} id="requirements">
+    <div class={style.faq} id="faq">
       <section class={style.content}>
-        <h1>We Take Care</h1>
-        <h2>Nirmaan takes care of all your construction requirements</h2>
+        <h1>FAQ</h1>
         <div class={style.flexBox}>
-          {
-            responsibilities.map((item) => (<Responsibilities key={item.id} data={item} />))
-          }
+          <FAQ />
         </div>
-      </section>
-    </div>
-    <div class={style.stopChasing} id="stop-chasing">
-      <section class={style.content}>
-        <h1>
-          Stop Chasing
-        </h1>
-        <StopChasing />
+        <hr />
       </section>
     </div>
 	</>

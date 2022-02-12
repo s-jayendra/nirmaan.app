@@ -3,7 +3,7 @@ import { h } from "preact";
 import { useState } from "preact/hooks";
 
 import Hamburger from "../hamburger";
-import LoginButton from "./login";
+import { GetInTouch } from "../ui";
 
 import style from "./style.css";
 
@@ -23,13 +23,9 @@ const Navigation = () => {
 				isMenuOpen={toggleMenu === SHOW}
 				onClick={onMenuClick}
 			/>
-      <div class={`${style.navCover} ${style[toggleMenu]}`} />
 			<nav class={style[toggleMenu]} onClick={onMenuClick}>
-				<a href="/#home">Home</a>
-				<a href="/#our-services">Our Services</a>
-				<a href="/#constructions">Constructions</a>
-				<a href="/#requirements">Requirements</a>
-				<a href="/#stop-chasing">Stop Chasing</a>
+        <GetInTouch className="primary" noArrow linkText="Login" />
+        <GetInTouch className="secondary" noArrow linkText="Contact Us" />
 			</nav>
     </>
   )

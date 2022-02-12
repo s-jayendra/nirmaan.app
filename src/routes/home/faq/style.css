@@ -1,0 +1,33 @@
+.faqWrapper {
+  
+}
+
+.qna {
+  padding: 35px 50px;
+}
+
+.ques {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.answer {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.logoHeading {
+  margin-top: 40px !important;
+}
+
+.customerLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  margin: 40px;
+}

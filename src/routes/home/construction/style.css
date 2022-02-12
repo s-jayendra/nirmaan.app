@@ -1,34 +1,72 @@
 .constWrapper {
-  width: 300px;
-  border: 15px double #333333;
-  height: 300px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  background: #ffffff;
-  position: relative;
-  transition: all 1s ease-in-out;
-
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 24px;
 }
 .constWrapper:hover {
-  border: 15px double #031d5e;
-  transition: all 1s ease-in-out;
+}
+
+.constWrapper .description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 140px;
 }
 
 .constIndex {
-  font-size: 4em;
-  position: absolute;
-  left: -44px;
-  background: #ffffff;
-  color: #031d5e;
+  font-size: 5em;
+  width: 70px;
 }
 
 .constDesc {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 1.5em;
+  color: #303030;
+  margin-left: 20px;
+}
+
+.bottomArrow {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+.bottomArrow::before {
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  transform-origin: 50% 50%;
+  transform: rotate(135deg) scale(1.5);
+  margin: -20px 0 0 -15px;
+}
+
+.bottomArrow::after {
+  
+  content: '';
+  display: block;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-color: #000;
+  position: absolute;
+  transform-origin: 50% 50%;
+  width: 0;
+  height: 40px;
+  border-width: 0 2px 0 0;
+  transform: translate(-1px, -26px) scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+  .constWrapper .description {
+    padding: 0 5px;
+  }
+  
 }

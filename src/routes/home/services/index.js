@@ -9,6 +9,7 @@ const Service = ({ data }) => {
       <h2 class={style.heading}>{data.title}</h2>
       <p>{data.description}</p>
       <div class={style.startsAt}>
+        <p>Starting at</p> 
         <p>{data.startsAt}</p>
       </div>
     </div>
