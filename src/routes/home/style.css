@@ -1,6 +1,14 @@
 .content {
 	padding: 0 7%;
 }
+h1, h3 {
+	color: #0d1f2a;
+}
+a,
+a:hover,
+a:active {
+	text-decoration: none;
+}
 
 .home {
 	height: 640px;

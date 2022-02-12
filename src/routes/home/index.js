@@ -18,7 +18,11 @@ const Home = () => (
             Easy and reliable construction services
           </h1>
           <div class={style.loginButton}>
-            <GetInTouch className="tertiary" linkText="Get In Touch" />
+            <GetInTouch
+              className="tertiary"
+              linkText="Get In Touch"
+              href="mailto:info@nirmaanapp.com"
+            />
           </div>
         </div>
         <hr />

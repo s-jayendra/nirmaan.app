@@ -24,8 +24,19 @@ const Navigation = () => {
 				onClick={onMenuClick}
 			/>
 			<nav class={style[toggleMenu]} onClick={onMenuClick}>
-        <GetInTouch className="primary" noArrow linkText="Login" />
-        <GetInTouch className="secondary" noArrow linkText="Contact Us" />
+        <GetInTouch
+          className="primary"
+          noArrow
+          linkText="Login"
+          href="https://myproject.nirmaan.app/"
+          target="_blank"
+        />
+        <GetInTouch
+          className="secondary"
+          noArrow
+          linkText="Contact Us"
+          href="mailto:info@nirmaanapp.com"
+        />
 			</nav>
     </>
   )
