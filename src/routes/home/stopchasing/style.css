@@ -67,7 +67,8 @@
     letter-spacing: 2px;
     position: relative;
     left: 4px;
-    top: -15px;
+    top: -5px;
+    line-height: 45px;
   }
   .chaseItem {
     padding-left: 60px;
