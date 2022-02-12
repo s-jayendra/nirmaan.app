@@ -1,10 +1,14 @@
 .respWrapper {
- width: 250px;
- height: 300px;
- border-radius: 10px;
- background: linear-gradient(to right bottom, #ffffff 50%, #EBEDFF);
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, #ffffff 50%, #EBEDFF);
 
- position: relative;
+  position: relative;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 24px;
 }
 
 .respTitle {

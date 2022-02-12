@@ -1,11 +1,13 @@
 .content {
-	padding: 0 200px;
+	padding: 0 10%;
 }
 
 .home {
 	height: 940px;
 	margin-top: -80px;
 	position: relative;
+	background: url(../../assets/banner.png);
+	background-size: cover;
 }
 
 .home section {
@@ -21,7 +23,7 @@
 	box-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
 }
 
-.home h1 {
+.homeSection h1 {
 	font-size: 4em;
 	width: 540px;
 	position: absolute;
@@ -29,13 +31,14 @@
 	left: 10%;
 }
 
-.home h1 mark {
-	background: #ffffff;
+.homeSection h1 mark {
+	background: rgba(0, 0, 0, 0.3);
+	color: #ffffff;
 	padding: 1px;
 }
 
-.home .image {
-	width: 100%;
+.homeSection .image {
+	max-width: 100%;
 	position: relative;
 	z-index: -1;
 }
@@ -44,6 +47,7 @@
 	padding-top: 95px;
 	padding-bottom: 95px;
 }
+
 .constructions .content,
 .stopChasing .content {
 	padding-top: 95px;
@@ -57,6 +61,7 @@
 	margin-bottom: 100px;
 	margin-top: 60px;
 }
+
 .content h2 {
 	color: #ffffff;
 	font-size: 2em;
@@ -68,40 +73,29 @@
 .content .flexBox{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 
 	flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
-
-	
-	.content {
-		padding: 0 20px;
-	}
-
 	.home {
-		height: 360px;
-		margin-top: 80px;
-		position: relative;
+		height: 640px;
 	}
 
-	.home .content h1 {
-		position: absolute;
+	.homeSection h1 {
 		font-size: 2em;
-		width: 320px;
-	}
-
-	.home .content img {
-		right: 20px;
 		max-width: 320px;
+	}	
+
+	.content h1 {
+		font-size: 2em;
+		margin-top: 10px;
+		margin-bottom: 40px;
 	}
 
-	.ourServices .content { 
-			flex-direction: column;
+	.stopChasing {
+		padding-bottom: 40px;
 	}
-	.serviceWrapper {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-}
+	
+} 

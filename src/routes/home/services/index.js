@@ -6,7 +6,7 @@ const Service = ({ data }) => {
   return (
     <div class={style.serviceWrapper}>
       <img width={220} src={data.imagePath} alt={data.title} />
-      <h2>{data.title}</h2>
+      <h2 class={style.heading}>{data.title}</h2>
       <p>{data.description}</p>
       <div class={style.startsAt}>
         <p>{data.startsAt}</p>

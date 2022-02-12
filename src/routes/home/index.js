@@ -10,15 +10,10 @@ import StopChasing from './stopchasing';
 const Home = () => (
   <>
 		<div class={style.home} id="home">
-      <section>
+      <section className={style.homeSection}>
         <h1>
           <mark>One-stop solution for all your construction requirements</mark>
         </h1>
-          <img
-            class={style.image}
-            src="../../assets/banner.png"
-            alt="One-stop solution for all your construction requirements"
-          />
       </section>
     </div>
     <div class={style.ourServices} id="our-services">

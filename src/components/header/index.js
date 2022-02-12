@@ -18,10 +18,10 @@ const Header = () => {
 			}
 		}
 
-		window.addEventListener('scroll', onScrollHandler);
+		// window.addEventListener('scroll', onScrollHandler);
 
 		return () => {
-			window.removeEventListener('scroll', onScrollHandler);
+			// window.removeEventListener('scroll', onScrollHandler);
 		}
 	}, []);
   return (
@@ -29,7 +29,7 @@ const Header = () => {
 			<div class={`${style.headerBg} ${showHeaderBg ? style.appear : ''}`} />
 			<div class={style.navigation}>
 				<div class={style.brandLogo}>
-					<img width={175} src="../../assets/nirmaan-logo.png" />
+					<a href="/#"><img width={175} src="../../assets/nirmaan-logo.png" /></a>
 				</div>
 				<Navigation />
 			</div>

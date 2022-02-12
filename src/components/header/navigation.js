@@ -23,13 +23,13 @@ const Navigation = () => {
 				isMenuOpen={toggleMenu === SHOW}
 				onClick={onMenuClick}
 			/>
+      <div class={`${style.navCover} ${style[toggleMenu]}`} />
 			<nav class={style[toggleMenu]} onClick={onMenuClick}>
-				<a href="/#">Home</a>
+				<a href="/#home">Home</a>
 				<a href="/#our-services">Our Services</a>
 				<a href="/#constructions">Constructions</a>
 				<a href="/#requirements">Requirements</a>
 				<a href="/#stop-chasing">Stop Chasing</a>
-				<LoginButton />
 			</nav>
     </>
   )
