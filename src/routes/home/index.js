@@ -1,19 +1,32 @@
 import { h } from 'preact';
 import Service from "./services";
-import { services, constructions, responsibilities, manpower } from './data';
+import { services, constructions, responsibilities } from './data';
 
 import style from './style.css';
 import Construction from './construction';
 import Responsibilities from './responsibilities';
 import StopChasing from './stopchasing';
+import LoginButton from "../../components/header/login";
 
 const Home = () => (
   <>
 		<div class={style.home} id="home">
       <section className={style.homeSection}>
-        <h1>
-          <mark>One-stop solution for all your construction requirements</mark>
-        </h1>
+        <div class={style.loginWrapper}>
+          <h1>
+            <mark>One-stop solution for all your construction requirements</mark>
+          </h1>
+          <div class={style.loginButton}>
+            <LoginButton
+              className={style.primary}
+              text="Login"
+              href={"https://myproject.nirmaan.app/"}
+              target="_blank"
+            />
+            <div class={style.buttonSeparator}/>
+            <LoginButton className={style.secondary} text="Contact Us" />
+          </div>
+        </div>
       </section>
     </div>
     <div class={style.ourServices} id="our-services">

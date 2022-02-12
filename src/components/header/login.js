@@ -2,10 +2,10 @@ import { h } from "preact";
 
 import style from "./style.css";
 
-const LoginButton = () => {
+const LoginButton = ({ className, text, ...props}) => {
   return (
-    <a href="" class={style.loginButton}>
-      Login
+    <a class={className} {...props}>
+      {text}
     </a>
   )
 }

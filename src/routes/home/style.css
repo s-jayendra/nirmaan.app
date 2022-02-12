@@ -26,9 +26,6 @@
 .homeSection h1 {
 	font-size: 4em;
 	width: 540px;
-	position: absolute;
-	top: 20%;
-	left: 10%;
 }
 
 .homeSection h1 mark {
@@ -41,6 +38,59 @@
 	max-width: 100%;
 	position: relative;
 	z-index: -1;
+}
+
+.homeSection .loginWrapper {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+}
+.homeSection .loginWrapper .loginButton {
+	display: flex;
+	margin-top: 30px;
+	align-items: center;
+}
+
+
+.loginButton a {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	transition: all 0.5s ease-in;
+	text-decoration: none;
+	border-radius: 5px;
+
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.loginButton a:hover {
+}
+
+.loginButton .primary {
+	background-color: #021e5e;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+}
+.loginButton .secondary {
+	color: #021e5e;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.loginButton .primary:hover {
+	color: #021e5e;
+	border: 1px solid #021e5e;
+	background-color: #ffffff;
+}
+.loginButton .secondary:hover {
+	background-color: #021e5e;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.loginButton .buttonSeparator {
+	width: 100px;
+	height: 2px;
+	background-color: #ffffff;
 }
 
 .ourServices .content {
@@ -70,7 +120,7 @@
 	margin-top: -100px;
 }
 
-.content .flexBox{
+.content .flexBox {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -97,5 +147,7 @@
 	.stopChasing {
 		padding-bottom: 40px;
 	}
-	
+	.loginButton .buttonSeparator {
+		width: 30px;
+	}
 } 
