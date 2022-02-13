@@ -13,8 +13,7 @@ const Footer = () => {
         </div>
       </div>
       <div class={style.developed}>
-        <p>Developed By</p>
-        <p>Jayendra Sharan | https://jayendra.xyz</p>
+        <p>Developed By: <a href="mailto:me@jayendra.xyz" target="_blank">Jayendra Sharan</a></p>
       </div>
     </footer>
   );
