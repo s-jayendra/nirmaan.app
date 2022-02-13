@@ -76,7 +76,7 @@ const Home = () => (
     </div>
     <div class={style.faq} id="faq">
       <section class={style.content}>
-        <h1>FAQ</h1>
+        <h1>Frequently Asked Questions</h1>
         <div class={style.flexBox}>
           <FAQ />
         </div>

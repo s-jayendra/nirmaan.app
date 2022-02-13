@@ -28,3 +28,15 @@ footer {
 	text-align: center;
 	margin-bottom: 45px;
 }
+
+:root {
+  --main-bg-color: rgb(81 6 255);
+	--v-main-bg-color: 81, 6, 255;
+	--secondary-bg-color: #ffffff;
+	--v-secondary-bg-color: 255, 255, 255;
+	--tertiary-bg-color: rgb(0, 135, 238);
+	--dark-bg-color: #0d1f2a; 
+	--main-body-text: #0d1f2a;
+	--secondary-text: #ffffff;
+}
+

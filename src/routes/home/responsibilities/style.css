@@ -6,8 +6,8 @@
 
   position: relative;
 
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-bottom: 24px;
 
   box-shadow: 0 12px 24px 0 rgb(0 0 0 / 5%)
@@ -15,7 +15,7 @@
 
 .respTitle {
   width: 100%;
-  background: #7c5b5b;
+  background: var(--main-bg-color);
   padding: 15px 10px;
   text-align: center;
   font-size: 18px;
@@ -30,4 +30,5 @@
   position: absolute;
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
 }

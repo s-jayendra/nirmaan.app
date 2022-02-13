@@ -16,7 +16,6 @@
   line-height: 54px;
   text-align: right;
   padding-right: 140px;
-  text-transform: uppercase;
 }
 
 .verticalLine {
@@ -49,8 +48,10 @@
   font-size: 40px;
   line-height: 40px;
   position: absolute;
-  left: 30px;
+  left: 25px;
   color: #FB0E0E;
+  font-size: 74px;
+  font-weight: 100;
 }
 
 @media screen  and (max-width: 768px) {

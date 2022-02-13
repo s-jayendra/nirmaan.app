@@ -34,26 +34,25 @@
 	line-height: 18px;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	color:#333333;
+	color: var(--main-body-text);
 }
 
 .serviceWrapper > p {
 	font-size: 14px;
-	line-height: 14px;
-	min-height: 90px;
+	line-height: 16px;
+	min-height: 95px;
 	padding: 5px 20px;
 }
 
 .serviceWrapper .startsAt {
-	background: #0087EE;
+	background: var(--tertiary-bg-color);
 	padding: 5px 10px;
 	border-radius: 10px;
 }
 
 .serviceWrapper .startsAt p {
 	font-size: 16px;
-	color: #ffffff;
-	font-weight: bold;
+	color: var(--secondary-text);
 	text-align: center;
 }
 

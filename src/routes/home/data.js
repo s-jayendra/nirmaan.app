@@ -10,21 +10,21 @@ export const services = [
     id: "civil_finishes",
     title: "Civil Finishes",
     description: `All kinds of masonry works and services, tile laying, stone flooring, brick wall building.`,
-    imagePath: "../../assets/nirmaan_paintandpop.png",
+    imagePath: "../../assets/nirmaan_civilfinishes.png",
     startsAt: "Rs. 40 per sqft",
   },
   {
     id: "light_fabrication",
     title: "Light Fabrication",
     description: `on-site fabrication of custom structures, sheds upto 18 mm of steel plates.`,
-    imagePath: "../../assets/nirmaan_paintandpop.png",
+    imagePath: "../../assets/nirmaan_lightfabrication.png",
     startsAt: "Rs. 110 per kg",
   },
   {
     id: "lv_electrical",
     title: "LV Electrical",
     description: `All low-voltage electrical services including point wiring, DB panel supply and installation, network cabling.`,
-    imagePath: "../../assets/nirmaan_paintandpop.png",
+    imagePath: "../../assets/nirmaan_lvelectrical.png",
     startsAt: "Rs. 90 per sqft",
   },
 ];
@@ -120,32 +120,32 @@ export const faq = [
 export const customers = [
   {
     id: 'pingaksh',
-    image: 'pingaksh',
+    image: 'pingaksh.png',
     alt: 'Pingaksh'
   },
   {
     id: 'obeya',
-    image: 'obeya',
+    image: 'obeya.png',
     alt: 'Obeya'
   },
   {
     id: 'bounce',
-    image: 'bounce',
+    image: 'bounce.png',
     alt: 'Bounce'
   },
   {
     id: 'wakefit',
-    image: 'wakefit',
+    image: 'wakefit.png',
     alt: 'Wakefit'
   },
   {
     id: 'swiggy',
-    image: 'swiggy',
+    image: 'swiggy.png',
     alt: 'Swiggy'
   },
   {
     id: 'attic',
-    image: 'attic',
+    image: 'attic.png',
     alt: 'Attic Space'
   },
 ]

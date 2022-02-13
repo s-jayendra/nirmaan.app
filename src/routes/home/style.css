@@ -2,7 +2,8 @@
 	padding: 0 7%;
 }
 h1, h3 {
-	color: #0d1f2a;
+	color: var(--main-body-text);
+	text-transform: capitalize;
 }
 a,
 a:hover,
@@ -11,13 +12,12 @@ a:active {
 }
 
 .home {
-	height: 640px;
+	height: 840px;
 	margin-top: -80px;
 	position: relative;
 	background: url(../../assets/banner.png);
 	background-repeat: no-repeat;
-	background-position: right;
-	background-size: contain;
+	background-size: cover ;
 }
 
 .home section {
@@ -36,7 +36,6 @@ a:active {
 .homeSection h1 {
 	font-size: 4em;
 	width: 670px;
-	text-transform: uppercase;
 }
 
 .homeSection .image {
@@ -63,68 +62,17 @@ hr {
 	width: 100%;
 	margin-top: 40px;
 }
-/* .loginButton a {
-	font-size: 24px;
-	line-height: 24px;
-	font-weight: bold;
-	transition: all 0.5s ease-in;
-	text-decoration: none;
-	border-radius: 5px;
 
-	padding: 10px 20px;
-	cursor: pointer;
-} */
-
-.loginButton a:hover {
-}
-
-.loginButton .primary {
-	background-color: #021e5e;
-	border: 1px solid #ffffff;
-	color: #ffffff;
-}
-.loginButton .secondary {
-	color: #021e5e;
-	background-color: #ffffff;
-	border: 1px solid #ffffff;
-}
-.loginButton .primary:hover {
-	color: #021e5e;
-	border: 1px solid #021e5e;
-	background-color: #ffffff;
-}
-.loginButton .secondary:hover {
-	background-color: #021e5e;
-	color: #ffffff;
-	border: 1px solid #ffffff;
-}
-.loginButton .buttonSeparator {
-	width: 100px;
-	height: 2px;
-	background-color: #ffffff;
-}
-
-.ourServices .content {
-	/* padding-top: 95px; */
-}
-
-.constructions .content,
-.stopChasing .content {
-	/* padding-top: 95px; */
-	/* min-height: 640px; */
-}
 .content {
 	padding-top: 40px;
 }
 
 .content h1 {
-	color: #333333;
 	font-size: 3em;
 	text-align: center;
 	margin-bottom: 70px;
 	margin-top: 10px;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 .content h2 {
@@ -150,6 +98,9 @@ hr {
 @media screen and (max-width: 768px) {
 	.home {
 		height: 640px;
+		background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
 	}
 
 	.homeSection h1 {
