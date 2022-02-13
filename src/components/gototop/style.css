@@ -1,19 +1,17 @@
 .topButton {
   position: fixed;
-  bottom: 20px;
+  bottom: -30px;
   right: 40px;
-
   text-decoration: none;
-  background: #333333;
-  color: #ffffff;
+  color: var(--main-bg-color);
+  font-size: 74px;
+  line-height: 74px;
+  cursor: pointer;
+  transform: scaleY(1.5);
+  transition: all 0.2s ease-in;
+}
 
-  font-size: 44px;
-  line-height: 60px;
-  text-align: center;
-
-  font-weight: bold;
-
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
+.topButton:hover {
+  transform: scaleY(2);
+  transition: all 0.2s ease-in;
 }

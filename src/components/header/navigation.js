@@ -10,7 +10,7 @@ import style from "./style.css";
 const SHOW = "show";
 const HIDE = "hide";
 
-const Navigation = () => {
+const Navigation = (props) => {
   const [toggleMenu, setToggleMenu] = useState(HIDE);
 
   const onMenuClick = () => {
@@ -35,7 +35,7 @@ const Navigation = () => {
           className="secondary"
           noArrow
           linkText="Contact Us"
-          href="mailto:info@nirmaanapp.com"
+          onClick={props.toggleEmailForm}
         />
 			</nav>
     </>

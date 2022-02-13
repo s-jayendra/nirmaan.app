@@ -5,7 +5,7 @@ import Navigation from "./navigation";
 
 import style from './style.css';
 
-const Header = () => {
+const Header = (props) => {
 	const [showHeaderBg, setShowHeaderBg] = useState(false);
 
 	useEffect(() => {
@@ -31,7 +31,7 @@ const Header = () => {
 				<div class={style.brandLogo}>
 					<a href="/#"><img width={175} src="../../assets/nirmaan-logo.png" /></a>
 				</div>
-				<Navigation />
+				<Navigation {...props} />
 			</div>
 		</header>
 	)

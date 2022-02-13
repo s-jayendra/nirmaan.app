@@ -1,0 +1,107 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 12345;
+}
+.emailWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 123456;
+}
+
+.formWrapper {
+  height: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 640px;
+	box-shadow: 0 12px 24px 0 rgb(0 0 0 / 5%);
+  border: 1px solid #e9eef1;
+}
+
+.inputGroup {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.inputGroup label {
+  font-weight: normal;
+  font-size: 16px;
+  width: 140px;
+  font-weight: bold;
+}
+
+.inputGroup input {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid rgba(51, 51, 51, 0.5); 
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.inputGroup textarea {
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  height: 140px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+form button {
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.submitBtn {
+  background-color: var(--main-bg-color);
+  color: var(--secondary-text);
+  border: 1px solid var(--main-bg-color);
+}
+
+.submitBtn:hover {
+  background-color: rgba(var(--v-main-bg-color), 0.7);
+}
+
+.closeBtn {
+  background-color: var(--secondary-bg-color);
+  color: var(--main-body-text);
+  border: 1px solid var(--main-bg-color);
+}
+
+@media screen and (max-width: 768px) {
+  .formWrapper {
+    width: 320px;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    border: 0;
+    margin-bottom: 5px;
+  }
+  .inputGroup label {
+    margin-bottom: 15px;
+  }
+  .inputGroup input {
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+  }
+}

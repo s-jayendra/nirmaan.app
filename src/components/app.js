@@ -1,24 +1,37 @@
 import { h } from 'preact';
-import { Router } from 'preact-router';
+import { useState } from 'preact/hooks';
 
 import Header from './header';
+import GoToTop from "./gototop";
+import Email from '../routes/home/email';
 
 import "../style/index.css";
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
+import Footer from './footer';
 
 
-const App = () => (
-	<div id="app">
-		<div class="layout">
-			<Header />
-			<Home />
+const App = () => {
+	const [visible, setEmailVisibility] = useState(false);
+
+  const toggleEmailForm = () => {
+    setEmailVisibility(!visible);
+  }
+
+	return (
+		<div id="app">
+			{
+        visible && <Email toggleEmailForm={toggleEmailForm} />
+      }
+			<div class="layout">
+				<Header toggleEmailForm={toggleEmailForm} />
+				<Home />
+			</div>
+			<Footer />
+			<GoToTop />
 		</div>
-		<footer>
-		info@nirmaan.app | +91-9835377587
-		</footer>
-	</div>
-)
+	)
+};
 
 export default App;
