@@ -46,12 +46,12 @@ a:active {
 
 .homeSection .loginWrapper {
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left: 10%;
 }
 .homeSection .loginWrapper .loginButton {
 	display: flex;
-	margin-top: 100px;
+	margin-top: 50px;
 	align-items: center;
 	justify-content: center;
 }

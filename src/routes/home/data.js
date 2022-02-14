@@ -119,11 +119,6 @@ export const faq = [
 
 export const customers = [
   {
-    id: 'pingaksh',
-    image: 'pingaksh.png',
-    alt: 'Pingaksh'
-  },
-  {
     id: 'obeya',
     image: 'obeya.png',
     alt: 'Obeya'
