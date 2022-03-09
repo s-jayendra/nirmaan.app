@@ -6,8 +6,6 @@ const Footer = () => {
   return (
     <footer>
       <div class={style.address}>
-        Stratos Infra Technologies Pvt Ltd
-        Obeya Verve, L376 / A, 14th B Cross Rd, Sector 6, HSR Layout, Bengaluru - 560068
         <div class={style.contact}>
           info@nirmaan.app | +91-9835377587
         </div>
