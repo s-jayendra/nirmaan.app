@@ -35,15 +35,6 @@ const FAQ = () => {
           </div>
         ))
       }
-      <hr />
-      <h1 class={style.logoHeading}>trusted by customers across the nation</h1>
-      <div class={style.customerLogos}>
-        {
-          customers.map(item => (
-            <img class={style.logo} alt={item.alt} src={`../../../assets/customers/${item.image}`} />
-          ))
-        }
-      </div>
     </div>
   )
 }
